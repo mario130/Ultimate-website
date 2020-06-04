@@ -1,2 +1,26 @@
 .header
    i.fas.fa-exchange-alt.fa-lg.toggle-sidebar
+   .dropdown.notifications-container
+      i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      .dropdown-menu(aria-labelledby='notifications')
+         .noti-head
+            | Notifications
+            span 50
+         .noti-content
+            ul.list-unstyled
+               li
+                  i.fa.fa-envelope.fa-lg
+                  |1 new email from afsljads fnjsadknf
+               li
+                  i.fas.fa-money-check-alt.fa-lg
+                  |Dskaf Kdsad donated 5$ for your project
+               li
+                  i.fas.fa-thumbs-up.fa-lg
+                  |26 likes from afsljads fnjsadknf and 25 other
+               li
+                  i.fa.fa-envelope.fa-lg
+                  |1 new email from afsljads fnjsadknf
+               li
+                  i.fas.fa-thumbs-up.fa-lg
+                  |26 likes from afsljads fnjsadknf and 25 other
+         .noti-foot.text-center: a(href="#") View all notifications
