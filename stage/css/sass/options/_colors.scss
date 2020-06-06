@@ -1,0 +1,21 @@
+$themes: (
+   gray-theme: (clr: #0c243c),
+   red-theme: (clr: #c0392b),
+   green-theme: (clr: #27ae60),
+   orange-theme: (clr: #d35400),
+   blue-theme: (clr: #2980b9)
+);
+
+@each $theme, $map in $themes {
+
+   .#{$theme} { // green-theme - blue-theme
+      .classname{
+         color: map-get($map, clr);
+      }
+
+      .page .page-head .page-title{
+         color: map-get($map, clr);
+      }
+   }
+   
+}
