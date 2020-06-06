@@ -34,6 +34,9 @@
                   color: #fff;
                }
             }
+            .child-links li a:hover{
+               transform: scale(1.1,1.1) translateX(9px);
+            }
          }
 
          > li > a{ //direct child
@@ -84,6 +87,7 @@
                width: 3px;
                height: 100%;
                background-color: #666;
+               opacity: .4;
             }
             a{
                position: relative;
@@ -95,6 +99,7 @@
                   top: 0;
                   width: 3px;
                   height: 100%;
+                  opacity: .8;
                   background-color: #fff;
                }
             }

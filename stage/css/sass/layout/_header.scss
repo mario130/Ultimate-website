@@ -4,6 +4,9 @@
 
    .toggle-sidebar{
       cursor: pointer;
+      &:hover{
+         color: #0c243c;
+      }
    }
 
    .header-icon{
