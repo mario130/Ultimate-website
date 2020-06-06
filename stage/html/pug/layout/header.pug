@@ -1,7 +1,7 @@
 .header
    i.fas.fa-exchange-alt.fa-lg.toggle-sidebar
    .dropdown.notifications-container
-      i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      i.fa.fa-bell.fa-lg.header-icon.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
       .dropdown-menu(aria-labelledby='notifications')
          .noti-head
             | Notifications
@@ -24,3 +24,33 @@
                   i.fas.fa-thumbs-up.fa-lg
                   |26 likes from afsljads fnjsadknf and 25 other
          .noti-foot.text-center: a(href="#") View all notifications
+   i.fa.fa-expand-alt.fa-lg.header-icon.toggle-fullscreen
+   .dropdown.usermenu-container
+      .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+         img.avatar.rounded-circle(src="https://avatars1.githubusercontent.com/u/62141485?s=400&u=ef9f7823bc0df39fe1b03211c10b4a83dc2ab6d9&v=4", alt="")
+         span.user Mario Yonan
+         i.fa.fa-angle-down.fa-lg
+      .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+         .user-info
+            h3 Mario Yonan
+            p Premium member
+         hr
+         ul.activities-list.list-unstyled
+            li Commented on New user's post
+            li Created a post on "Science" category
+            li Created chart on charts page
+            li Commented on Old user's post
+         hr
+         .row.usermenu-links
+            .col
+               .link-box
+                  i.fas.fa-cog.fa-lg.fa-fw
+                  span Settings
+            .col
+               .link-box
+                  i.fa.fa-user.fa-lg.fa-fw
+                  span My profile
+            .col
+               .link-box
+                  i.fas.fa-sign-out-alt.fa-lg.fa-fw
+                  span Logout
