@@ -15,7 +15,7 @@ $themes: (
       .header .usermenu-container .dropdown-menu .user-info p{
          color: map-get($map, clr);
       }
-      .page .sidebar .links-area .child-links:before,
+      
       .page .sidebar .links-area .child-links a:hover:before,
       .page .sidebar{
          background-color:  map-get($map, clr);

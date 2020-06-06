@@ -69,5 +69,12 @@ $(function () {
          .addClass($(this).data('theme'));
    })
    
-   
+   //switch fonts
+   var fonts = [];
+   $('.font-options option').each(function () {
+      fonts.push($(this).val())
+   })
+   $('.font-options select').on('change', function () {
+      $('body').removeClass(fonts.join(' ')).addClass($(this).find('option:selected').val())
+   })
 });

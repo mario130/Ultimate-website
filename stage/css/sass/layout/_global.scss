@@ -3,6 +3,42 @@
 }
 body{
    font-family: 'Ubuntu', sans-serif;
+   &.ubuntu{
+      font-family: 'Ubuntu', sans-serif;
+   }
+   &.roboto{
+      font-family: 'Roboto', sans-serif;
+   }
+   &.oswald{
+      font-family: 'Oswald', sans-serif;
+   }
+   &.tenali{
+      font-family: 'Tenali Ramakrishna', sans-serif;
+   }
+   &.metal{
+      font-family: 'Metal Mania', cursive;
+   }
+   &.lexend{
+      font-family: 'Lexend Tera', sans-serif;
+   }
+}
+[value='ubuntu']{
+   font-family: 'Ubuntu', sans-serif;
+}
+[value='roboto']{
+   font-family: 'Roboto', sans-serif;
+}
+[value='oswald']{
+   font-family: 'Oswald', sans-serif;
+}
+[value='tenali']{
+   font-family: 'Tenali Ramakrishna', sans-serif;
+}
+[value='metal']{
+   font-family: 'Metal Mania', cursive;
+}
+[value='lexend']{
+   font-family: 'Lexend Tera', sans-serif;
 }
 .page{
    min-height: 100vh;
@@ -28,8 +64,6 @@ body{
          font-weight: bold;
          color: #0c243c;
       }
-      .page-description{
-
-      }
+      
    }
 }
