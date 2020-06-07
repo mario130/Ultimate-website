@@ -78,3 +78,18 @@ $(function () {
       $('body').removeClass(fonts.join(' ')).addClass($(this).find('option:selected').val())
    })
 });
+
+//fn
+let abadeer = function () {
+   let birthYear = parseInt(prompt('when were you born?'))
+   let currentYear = 2020
+   
+   if (birthYear > 1950 && birthYear < 2015) {
+      let resultByYears = currentYear - birthYear;
+      let resultByMonths = resultByYears * 12;
+
+      return alert('You are ' + resultByYears + ' years old 🥂 - ' + resultByMonths + ' months by approximation.');
+   } else {
+      alert('بتهزر ياروح امك 🐸')
+   }
+}
